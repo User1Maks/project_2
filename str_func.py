@@ -1,7 +1,7 @@
-def str_funcs():
+def str_funcs(word):
     """Возвращает каждое слово в верхнем регистре"""
-    user_input = input('Введите текст: ')
-    return user_input.upper()
+    # word = input('Введите текст: ')  # пропишем аргумент функции
+    return word.upper()
 
 
 def str_funcs_2():
@@ -10,5 +10,5 @@ def str_funcs_2():
     return user_input.title()
 
 
-print(str_funcs())
-print(str_funcs_2())
+print(str_funcs(f"{input('Введите текст: ')}"))
+# print(str_funcs_2())
